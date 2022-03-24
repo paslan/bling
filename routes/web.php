@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('products/{page}', 'App\Http\Controllers\BlingController@show')->name('bling.show');
+
+Route::get('products/{id}/detail', 'App\Http\Controllers\BlingController@detail')->name('bling.detail');
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
