@@ -35,7 +35,7 @@ class BlingController extends Controller
         //dd($data);
 
         $data = json_decode($data, true);
-        //dd($data);
+        dd($data);
 
         $erro = (isset($data['retorno']['erros'][0]['erro']['cod'])) ? $data['retorno']['erros'][0]['erro']['cod'] : 0 ;
 
